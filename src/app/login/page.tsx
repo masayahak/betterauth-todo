@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { LoginForm } from "@/components/login-form";
 
 export default function Page() {
@@ -9,7 +10,8 @@ export default function Page() {
           <p>テスト用のアカウントを用意しています。</p>
           <p className="font-mono mt-1">test@example.com / kyouhayuki</p>
           <p className="font-mono mt-1">admin@test.com / admintarou</p>
-        </div>{" "}
+        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { getMyTodos } from "@/lib/todo";
 import { TodoApp } from "@/components/TodoApp";
 import { requireSession } from "@/lib/auth-guard";
 import { Logout } from "@/components/logout";
+import { Footer } from "@/components/footer";
 
 // AWSへデプロイした時にこのページがダイナミックレンダリングなことを明示する
 export const dynamic = "force-dynamic";
@@ -32,6 +33,8 @@ export default async function Home() {
         </div>
 
         <TodoApp todos={todos} />
+
+        <Footer />
       </div>
     </main>
   );

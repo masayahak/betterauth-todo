@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { SignupForm } from "@/components/signup-form";
 
 export default function SignupPage() {
@@ -6,6 +7,7 @@ export default function SignupPage() {
       <div className="flex w-full max-w-sm flex-col gap-6">
         <SignupForm />
       </div>
+      <Footer />
     </div>
   );
 }
