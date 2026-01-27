@@ -52,7 +52,7 @@ export function LoginForm({
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setLoading(true);
 
-    // Better Auth のクライアントSDKを利用してsingIn
+    // Better Auth のクライアントSDKを利用してsignIn
     await signIn.email(
       {
         email: values.email,
